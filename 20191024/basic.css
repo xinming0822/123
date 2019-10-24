@@ -1,3 +1,7 @@
+:root{
+    --back_color: pink;
+}
+
 body {
     margin: 0;
     text-align: center;
@@ -24,6 +28,7 @@ footer {
 }
 
 div.grid1 {
+	background-color: var(--back_color);
     background-color: pink;
     animation-name: ani_grid1;
     animation-duration: 4s;
