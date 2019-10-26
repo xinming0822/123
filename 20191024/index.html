@@ -5,9 +5,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 					<!-- 判斷螢幕寬度 -->
 	<link rel="stylesheet" href="basic.css">
-	<link rel="stylesheet" media="(max-width: 420px)" href="a.css"> 						<!-- 螢幕寬度小於 420px，使用 a.css -->
+	<link rel="stylesheet" media="(min-width: 211px) and (max-width: 420px)" href="a.css"> <!-- 螢幕寬度小於 420px 且大於 211px，使用 a.css -->
 	<link rel="stylesheet" media="(min-width: 421px) and (max-width: 840px)" href="b.css"> <!-- 螢幕寬度大於 421px 且小於 840px，使用 b.css -->
-	<link rel="stylesheet" media="(min-width: 841px)" href="c.css"> 						<!-- 螢幕寬度大於 841px，使用 c.css -->
+	<link rel="stylesheet" media="(min-width: 841px)" href="c.css"> 					   <!-- 螢幕寬度大於 841px，使用 c.css -->
+	<link rel="stylesheet" media="(max-width: 210px)" href="d.css">						   <!-- 螢幕寬度小於 210px，使用 d.css -->
+	<script src="control.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,6 +31,7 @@
 
 <footer>
 	<p>APP Course Example 2019.10.17</p>
+	<i class="fas fa-heart" onclick="javascript:beat();" id="heart"></i>
 </footer>
 
 </body>
